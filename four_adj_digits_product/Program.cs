@@ -21,9 +21,9 @@ public class MainClass
         string stringOfNumbers = Console.ReadLine();
         Console.WriteLine(stringOfNumbers);
 
-        int[] numberInt = new int[stringOfNumbers.Length];
-        
         if ( stringOfNumbers.Length < 4 ) throw new Exception("The length of the number is not enough");
+
+        int[] numberInt = new int[stringOfNumbers.Length];
 
         for (int i = 0, j = 0; i < stringOfNumbers.Length; i++)
         {
