@@ -9,6 +9,7 @@
  *    still it should return max product.
  * 3. What if any characters other than numericals are given as input, then it
  *    should throw an exception.
+ * 4. What if the given input having less size than 4, then it should throw an exception.
  * *************************************************************************************/
 using System;
 
@@ -21,6 +22,8 @@ public class MainClass
         Console.WriteLine(stringOfNumbers);
 
         int[] numberInt = new int[stringOfNumbers.Length];
+        
+        if ( stringOfNumbers.Length < 4 ) throw new Exception("The length of the number is not enough");
 
         for (int i = 0, j = 0; i < stringOfNumbers.Length; i++)
         {
